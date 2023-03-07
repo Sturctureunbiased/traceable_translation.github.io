@@ -1,0 +1,30 @@
+/* #canvas {
+    background: #ABABAB;
+    position: relative;
+    z-index: 1;
+    background:transparent;
+  } */
+
+canvas, img {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: -o-crisp-edges;  
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;           
+    border: 0px solid #ddd;
+ }
+
+
+ .carousel-item .carousel-caption {
+  position: static;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+  .btn-success.custom-btn {
+    background-color: #00ff00;
+    border-color:  #00ff00;
+  }
