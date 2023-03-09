@@ -76,8 +76,8 @@ var arr_vel_y = null;
 // def_url = git_raw_url + '/json_files/json_oct.json'
 
 
-var source = 'img0012_tcia_MRslice_126';
-var target = 'pre_img0012_tcia_CTslice_155';
+var source = 'img0012_tcia_MRslice_133';
+var target = 'CT_trans_125';
 var d = 'Chest';
 init_img_vel(source, target, d, tag='pre_')
 
@@ -128,8 +128,8 @@ $('#dataset').change(function() {
       var d = 'OCT';
   }
   if ($(this).val() == 'MRI-CT'){
-      var source = 'img0012_tcia_MRslice_126';
-      var target = 'pre_img0012_tcia_CTslice_155';
+      var source = 'img0012_tcia_MRslice_133';
+      var target = 'CT_trans_125';
       var d = 'Chest';
       tag = 'pre_'
   }
