@@ -76,7 +76,7 @@ var arr_vel_y = null;
 // def_url = git_raw_url + '/json_files/json_oct.json'
 
 
-var source = 'img0012_tcia_MRslice_133';
+var source = 'img0012_tcia_MRslice_126';
 var target = 'CT_trans_125';
 var d = 'Chest';
 init_img_vel(source, target, d, tag='pre_')
@@ -128,7 +128,7 @@ $('#dataset').change(function() {
       var d = 'OCT';
   }
   if ($(this).val() == 'MRI-CT'){
-      var source = 'img0012_tcia_MRslice_133';
+      var source = 'img0012_tcia_MRslice_126';
       var target = 'CT_trans_125';
       var d = 'Chest';
       tag = 'pre_'
@@ -202,7 +202,7 @@ function getPosition(event){
     new_y = dis_y;
 
     drawCoordinates2(x, y, ctx2, img2, new_x, new_y);
-    drawArrow(ctx2, x, y, new_x,new_y, 1, 'black');
+    drawArrow(ctx2, x, y, new_x,new_y, 1, 'orange');
 
     $('#t_x').text(String(new_x.toFixed(2))) ;
     $('#t_y').text(String(new_y.toFixed(2))) ;
@@ -231,7 +231,7 @@ function drawCoordinates(x,y, ctx, img, style="#ff2626"){
 }
 
 
-function drawCoordinates2(x,y, ctx, img, x2,y2){	
+function drawCoordinates2(x,y, ctx, img, x2, y2){	
   ctx.drawImage(img,0 ,0 ,h, w);
   ctx.imageSmoothingEnabled = false;
   ctx.fillStyle = "#ff2626"; // Red color
