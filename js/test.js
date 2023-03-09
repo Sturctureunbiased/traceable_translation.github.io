@@ -76,8 +76,8 @@ var arr_vel_y = null;
 // def_url = git_raw_url + '/json_files/json_oct.json'
 
 
-var source = 'img0012_tcia_MRslice_133';
-var target = 'pre_img0012_tcia_CTslice_159';
+var source = 'img0012_tcia_MRslice_126';
+var target = 'pre_img0012_tcia_CTslice_155';
 var d = 'Chest';
 init_img_vel(source, target, d, tag='pre_')
 
@@ -202,7 +202,7 @@ function getPosition(event){
     new_y = dis_y;
 
     drawCoordinates2(x, y, ctx2, img2, new_x, new_y);
-    drawArrow(ctx2, x, y, new_x,new_y, 2, 'black');
+    drawArrow(ctx2, x, y, new_x,new_y, 1, 'black');
 
     $('#t_x').text(String(new_x.toFixed(2))) ;
     $('#t_y').text(String(new_y.toFixed(2))) ;
@@ -247,7 +247,7 @@ function drawCoordinates2(x,y, ctx, img, x2,y2){
 
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
   //variables to be used when creating the arrow
-  var headlen = 5;
+  var headlen = 10;
   var angle = Math.atan2(toy-fromy,tox-fromx);
 
   ctx.save();
